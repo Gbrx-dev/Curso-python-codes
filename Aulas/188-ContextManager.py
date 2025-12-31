@@ -1,6 +1,3 @@
-# Criando arquivos com Python + Context Manager with
-# Usamos a função open para abrir
-# um arquivo em Python (ele pode ou não existir)
 # Modos:
 # r (leitura), w (escrita), x (para criação)
 # a (escreve ao final), b (binário)
@@ -18,6 +15,8 @@
 # Vamos falar mais sobre o módulo json, mas:
 # json.dump = Gera um arquivo json
 # json.load
+caminho_arquivo = 'C:\\Users\\ESTUDAR\Desktop\\UDEMY\\GIT-PYTHON\\Python'
+caminho_arquivo += 'aula116.txt'
 
-caminho = 'C:\\Users\\ESTUDAR\\Desktop\\UDEMY\\\GIT-PYTHON\\curso-python-codes\\Curso-python-codes\\Aulas\\aula187.txt'
-caminho = 'aula187.txt'
+with open(caminho_arquivo, 'w') as arquivo:
+    print('Olá')
