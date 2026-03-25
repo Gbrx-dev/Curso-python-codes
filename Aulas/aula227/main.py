@@ -1,8 +1,7 @@
-from log import LogFileMixin, LogPrintMixin
+from eletronico import Smartphone
 
-lp = LogPrintMixin()
-lp.log_error('qualquer coisa')
-lp.log_success('sucesso')
-lf = LogPrintMixin()
-lf.log_error('qualquer coisa')
-lp.log_success('sucesso')
+galaxy_s25 = Smartphone('Galaxy S25')
+iphone = Smartphone('iPhone')
+
+galaxy_s25.ligar()
+iphone.desligar()
